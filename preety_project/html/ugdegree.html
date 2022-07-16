@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch on UG PORTAL</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css"><link>
-    <link rel="stylesheet" href="../css/styles.css"></link>
+    <title>Switch on UG Portal</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 <body class="bg-light">
@@ -18,14 +18,14 @@
 
         <div class="container-fluid">
             <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Private_limited_company">PVT LTD</a>
-            <div class="nav-item text-dark"><h3>UG PORTAL</h3></div>
-            <div class="nav-item fw-bold fs-3 text-primary">ABOUT US</div>    
+            <div class="nav-item text-light"><h3>UG PORTAL</h3></div>
+            <div class="nav-item fw-bold fs-3 text-primary">GET START</div>    
         </div>
     </nav>
 <div class="container">
-<div class="container text-center bg-light">
+<div class="container text-center bg-dark">
 <div class="row">
-    <div class="col-12 bg-dark field text-light">
+    <div class="col-12 bg-light field text-dark">
         <form method="POST" name="ugdegree" action="../php/insert.php">
         Name<span class="star">*</span><br><input type="text" name="name" class="inprop" placeholder="JOHN A" autocomplete="off" required="required"/><br>
         Phone<span class="star">*</span><br><input type="number" name="phone" class="inprop" placeholder="9988334455" autocomplete="off" required="required"/><br>
@@ -38,7 +38,9 @@
         </select>
         <br>
         DOB<span class="star">*</span><br><input type="date" name="dob" required="required"/><br>
-        Course<br>
+        Course<span class="star">*</span><br><input type="text" class="inprop" name="course" placeholder="B.E/B.Tech Department Name" required="required"/><br>
+        <!--
+        <br>
         <select class="selectt sin" name="course" required="required">
             <option value="B.E. Arch">B. Arch</option>
             <option value="B.E. Aeronautical Engineering">B.E. Aeronautical Engineering</option>
@@ -78,7 +80,7 @@
             <option value="B.Tech. Chemical & Electrochemical Engg">B.Tech. Chemical & Electrochemical Engg</option>
             <option value="B.Tech. Chemical Engineering">B.Tech. Chemical Engineering</option>
             <option value="B.Tech. Computer Science and Business Systems">B.Tech. Computer Science and Business Systems</option>
-            <option value="B.Tech. Computer Science and Engineering (Tamil Medium)">B.Tech. Computer Science and Engineering (Tamil Medium)</option>
+            <option value="B.Tech. Computer Science and Engineering (Tamil Medium)">B.Tech. Computer Science and Engineering (Tamil Medium)</option> 
             <option value="B.Tech. Fashion Technology">B.Tech. Fashion Technology</option>
             <option value="B.Tech. Food Technology">B.Tech. Food Technology</option> 
             <option value="B.Tech. Handloom and Textile Technology">B.Tech. Handloom and Textile Technology</option>
@@ -91,6 +93,7 @@
             <option value="B.Tech. Textile Chemistry">B.Tech. Textile Chemistry</option>
             <option value="B.Tech.Textile Technology">B.Tech.Textile Technology</option>
         </select><br>
+        -->
         District<br>
         <select name="district" required="required">
             <option value="Ariyalur">Ariyalur</option>
@@ -142,9 +145,7 @@
 </div>
 </div>
 </div>
-<footer class="footer bg-primary text-light text-center">
-Note : &copy; Copyright Reserved <br>&trade;&nbsp;&nbsp;&nbsp;MPI
-</footer>
+<footer class="footer bg-primary text-light text-center">&copy; Copyright Reserved 2021-2022<br>&trade;&nbsp;&nbsp;&nbsp;MPI</footer>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </body>
