@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only for students</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"><link>
+    <link rel="stylesheet" href="../css/styles.css"></link>
+
+</head>
+<body class="bg-light">
+    <!--
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+    -->
+    <nav class="navbar navbar-expand-lg bg-grey">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Private_limited_company">PVT LTD</a>
+            <div class="nav-item text-dark"><h3>UG PORTAL</h3></div>
+            <div class="nav-item fw-bold fs-3 text-primary">ABOUT US</div>    
+        </div>
+    </nav>
+<div class="container">
+<div class="container text-center bg-light">
+<div class="row">
+    <div class="col-12 bg-dark field text-light">
+        <form method="POST" name="ugdegree" action="../php/insert.php">
+        Name<span class="star">*</span><br><input type="text" name="name" class="inprop" placeholder="JOHN A" autocomplete="off" required="required"/><br>
+        Phone<span class="star">*</span><br><input type="number" name="phone" class="inprop" placeholder="9988334455" autocomplete="off" required="required"/><br>
+        Email<span class="star">*</span><br><input type="text" name="email" class="inprop" placeholder="abcd@gmail.com" autocomplete="off" required="required"/><br>
+        Gender<span class="star">*</span><br>
+        <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        DOB<span class="star">*</span><br><input type="date" name="dob" required="required"/><br>
+        Course<br>
+        <select class="selectt sin" name="course" required="required">
+            <option value="B.E. Arch">B. Arch</option>
+            <option value="B.E. Aeronautical Engineering">B.E. Aeronautical Engineering</option>
+            <option value="B.E. Aerospace Engineering">B.E. Aerospace Engineering</option>
+            <option value="B.E. Agriculture Engineering">B.E. Agriculture Engineering</option>
+            <option value="B.E. Automobile Engineering">B.E. Automobile Engineering</option>
+            <option value="B.E. Biomedical Engineering">B.E. Biomedical Engineering</option>
+            <option value="B.E. Civil Engineering">B.E. Civil Engineering</option>
+            <option value="B.E. Civil Engineering (Tamil Medium)">B.E. Civil Engineering (Tamil Medium)</option>
+            <option value="B.E. Computer Science and Engineering">B.E. Computer Science and Engineering</option>
+            <option value="B.E. Computer and Communication Engg">B.E. Computer and Communication Engg</option>
+            <option value="B.E. Electrical and Electronics Engineering">B.E. Electrical and Electronics Engineering</option>
+            <option value="B.E. Electronics and Communication Engg">B.E. Electronics and Communication Engg</option>
+            <option value="B.E. Electronics and Instrumentation Engg">B.E. Electronics and Instrumentation Engg</option>
+            <option value="B.E. Electronics and TeleCommunication Engg">B.E. Electronics and TeleCommunication Engg</option>
+            <option value="B.E. Environmental Engineering">B.E. Environmental Engineering</option>
+            <option value="B.E. Geo Informatics Engineering">B.E. Geo Informatics Engineering</option>
+            <option value="B.E. Industrial Engineering">B.E. Industrial Engineering</option>
+            <option value="B.E. Industrial Engineering and Management">B.E. Industrial Engineering and Management</option>
+            <option value="B.E. Instrumentation and Control Engineering">B.E. Instrumentation and Control Engineering</option>
+            <option value="B.E. Manufacturing Engineering">B.E. Manufacturing Engineering</option>
+            <option value="B.E. Marine Engineering">B.E. Marine Engineering</option>
+            <option value="B.E. Materials Science and Engg">B.E. Materials Science and Engg</option>
+            <option value="B.E. Mechanical Engineering">B.E. Mechanical Engineering</option>
+            <option value="B.E. Mechanical Engineering (Sandwich)">B.E. Mechanical Engineering (Sandwich)</option>
+            <option value="B.E. Mechanical Engineering (Tamil Medium)">B.E. Mechanical Engineering (Tamil Medium)</option>
+            <option value="B.E. Mechanical and Automation Engg">B.E. Mechanical and Automation Engg</option>
+            <option value="B.E. Mechatronics Engineering">B.E. Mechatronics Engineering</option>
+            <option value="B.E. Medical Electronics">B.E. Medical Electronics</option> 
+            <option value="B.E. Petrochemical Engineering">B.E. Petrochemical Engineering</option>
+            <option value="B.E. Production Engineering">B.E. Production Engineering</option>
+            <option value="B.E. Robotics and Automation">B.E. Robotics and Automation</option>
+            <option value="B.E. Safety and Fire Engineering">B.E. Safety and Fire Engineering</option>
+            <option value="B.Tech. Artificial Intelligence and Data Science">B.Tech. Artificial Intelligence and Data Science</option>
+            <option value="B.Tech. Biotechnology">B.Tech. Biotechnology</option>
+            <option value="B.Tech. Biotechnology and Biochemical Engineering">B.Tech. Biotechnology and Biochemical Engineering</option>
+            <option value="B.Tech. Chemical & Electrochemical Engg">B.Tech. Chemical & Electrochemical Engg</option>
+            <option value="B.Tech. Chemical Engineering">B.Tech. Chemical Engineering</option>
+            <option value="B.Tech. Computer Science and Business Systems">B.Tech. Computer Science and Business Systems</option>
+            <option value="B.Tech. Computer Science and Engineering (Tamil Medium)">B.Tech. Computer Science and Engineering (Tamil Medium)</option>
+            <option value="B.Tech. Fashion Technology">B.Tech. Fashion Technology</option>
+            <option value="B.Tech. Food Technology">B.Tech. Food Technology</option> 
+            <option value="B.Tech. Handloom and Textile Technology">B.Tech. Handloom and Textile Technology</option>
+            <option value="B.Tech. Information Technology">B.Tech. Information Technology</option>
+            <option value="B.Tech. Petrochemical Technology">B.Tech. Petrochemical Technology</option> 
+            <option value="B.Tech. Petroleum Engineering">B.Tech. Petroleum Engineering</option>
+            <option value="B.Tech. Pharmaceutical Technology">B.Tech. Pharmaceutical Technology</option>
+            <option value="B.Tech. Plastic Technology">B.Tech. Plastic Technology</option>
+            <option value="B.Tech. Polymer Technology">B.Tech. Polymer Technology</option>
+            <option value="B.Tech. Textile Chemistry">B.Tech. Textile Chemistry</option>
+            <option value="B.Tech.Textile Technology">B.Tech.Textile Technology</option>
+        </select><br>
+        District<br>
+        <select name="district" required="required">
+            <option value="Ariyalur">Ariyalur</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Chengalpattu">Chengalpattu</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Kanchipuram">Kanchipuram</option>
+            <option value="Cuddalore">Cuddalore</option>
+            <option value="Dharmapuri">Dharmapuri</option>
+            <option value="Dindigul">Dindigul</option>
+            <option value="Erode">Erode</option>
+            <option value="Kallakurichi">Kallakurichi</option>
+            <option value="Kanyakumari">Kanyakumari</option>
+            <option value="Karur">Karur</option>
+            <option value="Krishnagiri">Krishnagiri</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Mayiladuthurai">Mayiladuthurai</option>
+            <option value="Nagapattinam">Nagapattinam</option>
+            <option value="Namakal">Namakal</option>
+            <option value="Nilgrirs">Nilgrirs</option>
+            <option value="Perambalur">Perambalur</option>
+            <option value="Pudukkottai">Pudukkottai</option>
+            <option value="Ramanathapuram">Ramanathapuram</option>
+            <option value="Ranipet">Ranipet</option>
+            <option value="Selam">Selam</option>
+            <option value="Sivagangai">Sivagangai</option>
+            <option value="Tenkasi">Tenkasi</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Theni">Theni</option>
+            <option value="Thoothukudi">Thoothukudi</option>
+            <option value="Tiruchirappalli">Tiruchirappalli</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Tirupattur">Tirupattur</option>
+            <option value="Tiruppur">Tiruppur</option>
+            <option value="Tiruvallur">Tiruvallur</option>
+            <option value="Tiruvannamalai">Tiruvannamalai</option>
+            <option value="Tiruvarur">Tiruvarur</option>
+            <option value="Vellore">Vellore</option>
+            <option value="Viluppuram">Viluppuram</option>
+            <option value="Virudhunagar">Virudhunagar</option>
+        </select><br>
+        Address<span class="star">*</span><br><textarea name="address" autocomplete="off" required="required"></textarea><br>
+        Pincode<span class="star">*</span><br><input type="number" name="pincode" class="inprop" placeholder="600025" autocomplete="off" required="required"/><br>
+        Resume<span class="star">*</span><br><input type="file" name="resume" required="required"/><br>
+        Experienced Certificate(optional)<br><input type="file" name="extra"/><br><br>
+        <input type="submit" name="submit1" value="Enter" class="btn btn-success"><br><br>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<footer class="footer bg-primary text-light text-center">
+Note : &copy; Copyright Reserved <br>&trade;&nbsp;&nbsp;&nbsp;MPI
+</footer>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
