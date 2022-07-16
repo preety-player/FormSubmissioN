@@ -1,0 +1,44 @@
+body{
+    background-color: white;
+}
+.tex{
+    color:white;
+}
+.bg{
+    background-color: white;
+}
+.lbg{
+    background-color: white;
+}
+.star{
+    color : red;
+}
+.field{
+    background-color: white;
+    border-radius: 30px;
+    border:3px solid orange;
+}
+.inprop{
+    border-radius: 9px;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bor{
+    border : 3px solid yellow;
+    border-radius: 9px;
+}
+.gcl{
+    color : green;
+}
+.bla{
+    background-color: black;
+}
+selectt{
+ width: auto;
+ height: auto;
+}
+.sin{
+    width: 50%;
+}
