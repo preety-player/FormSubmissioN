@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch on PG PORTAL</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css"></link>
-    <link rel="stylesheet" href="../css/styles.css"></link>
+    <title>Switch on PG Portal</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
-<body class="bg-light">
+<body class="bg-dark">
     <!--
     <div class="spinner-border text-primary" role="status">
         <span class="visually-hidden"></span>
@@ -18,14 +18,14 @@
 
         <div class="container-fluid">
             <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Private_limited_company">PVT LTD</a>
-            <div class="nav-item text-dark"><h3>PG PORTAL</h3></div>
-            <div class="nav-item fw-bold fs-3 text-primary">ABOUT US</div>    
+            <div class="nav-item text-light"><h3>PG PORTAL</h3></div>
+            <div class="nav-item fw-bold fs-3 text-primary">GET START</div>    
         </div>
     </nav>
 <div class="container">
-<div class="container text-center bg-light">
+<div class="container text-center bg-dark">
 <div class="row">
-    <div class="col-12 bg-dark field text-light">
+    <div class="col-12 bg-light field text-dark">
         <form method="POST" name="pgdegree" action="../php/insert.php">
          Name<span class="star">*</span><br><input type="text" name="name" class="inprop" placeholder="JOHN A" autocomplete="off" required="required"/><br>
          Phone<span class="star">*</span><br><input type="number" name="phone" class="inprop" placeholder="9988334455" autocomplete="off" required="required"/><br>
@@ -34,14 +34,15 @@
          <select name="gender" required="required">
             <option value="male">Male</option>
             <option value="female">Female</option>
-            <option value="other">Other</option>
+            <option value=">Other</option>
          </select>
          <br>
-         DOB<span class="star">*</span><br><input type="date" name="dob"/><br>
+         DOB<span class="star">*</span><br><input type="date" name="dob"/>
+         <br>
          Course<span class="star">*</span><br><input type="text" class="inprop" name="course" placeholder="M.E/M.Tech Department Name" required="required"/><br>
          District<br>
          <select name="district">
-            <option value="Ariyalur">Ariyalur</option>
+   <option value="Ariyalur">Ariyalur</option>
             <option value="Chennai">Chennai</option>
             <option value="Chengalpattu">Chengalpattu</option>
             <option value="Coimbatore">Coimbatore</option>
@@ -81,7 +82,8 @@
             <option value="Virudhunagar">Virudhunagar</option>
          </select><br>
          Address<span class="star">*</span><br><textarea name="address" autocomplete="off" required="required"></textarea><br>
-         Pincode<span class="star">*</span><br><input type="number" name="pincode" class="inprop" placeholder="600025" autocomplete="off" required="required"/><br>
+         Pincode<span class="star">*</span><br><input type="number" name="pincode" class="inprop" placeholder="600025" autocomplete="off"
+required="required"/><br>
          Resume<span class="star">*</span><br><input type="file" name="resume" required="required"/><br>
          Extra Certificate(optional)<br><input type="file" name="extra"><br><br>
          <input type="submit" value="Enter" name="submit" class="btn btn-success"><br><br>
@@ -90,6 +92,9 @@
 </div>
 </div>
 </div>
+
+<footer class="footer bg-primary text-light text-center">&copy; Copyright Reserved 2021-2022<br>&trade;&nbsp;&nbsp;&nbsp;MPI</footer>
+
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </body>
